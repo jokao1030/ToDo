@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+            app:showAsAction="always"
+            android:checkableBehavior="single"
+            android:visible="true">
+        <item
+                android:title="Sort the list by:"
+                android:checkable="false">
+        </item>
+        <item
+                android:title="Default"
+                android:id="@+id/menu_default"
+                android:checked="true"/>
+        <item
+                android:title="Favorite/Date"
+                android:id="@+id/menu_fd"
+                android:checked="false"/>
+        <item
+                android:title="Date/Favorite"
+                android:id="@+id/menu_df"
+                android:checked="false"/>
+    </group>
+</menu>

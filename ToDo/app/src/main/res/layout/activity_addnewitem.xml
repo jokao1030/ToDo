@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".NewToDoActivity">
+
+        <include
+                android:id="@+id/toolBar"
+                layout="@layout/bar_layout"
+        />
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_margin="10dp">
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:id="@+id/itemName"
+                        android:singleLine="true"
+                        android:textColor="@color/colorMain"
+                        android:textColorHint="@color/colorMain"
+                />
+        </FrameLayout>
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_margin="10dp">
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Description"
+                        android:inputType="textMultiLine"
+                        android:id="@+id/description"
+                        android:textColor="@color/colorMain"
+                        android:textColorHint="@color/colorMain"
+                />
+        </FrameLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:id="@+id/toDoDate"
+
+                ></TextView>
+                <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/toDoDateBtn"
+                        android:background="@drawable/calendar"
+
+                ></Button>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:id="@+id/toDoTime"
+                ></TextView>
+                <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/toDoTimeBtn"
+                        android:background="@drawable/clock"
+                ></Button>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Complete"
+                        android:textSize="18dp"
+                        android:id="@+id/complete_u"
+                />
+                <CheckBox
+                        android:button="@android:drawable/btn_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Favorite"
+                        android:textSize="18dp"
+                        android:id="@+id/favorite_u"
+                />
+        </LinearLayout>
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp">
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/radius_border_button"
+                        android:text="Add New Item"
+                        android:textAllCaps="false"
+                        android:id="@+id/saveNewItemBtn"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"/>
+
+
+        </FrameLayout>
+
+</LinearLayout>

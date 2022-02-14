@@ -1,0 +1,22 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#1A237E</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#2A52BE</item>
+    </style>
+
+    <style name="menuStyle"
+           parent="Theme.AppCompat.DayNight">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="Dialog.Theme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- BackgroundColor of the date modal -->
+        <item name="colorAccent">#0066F5</item>
+        <!-- textColor of the date modal -->
+        <item name="android:textColorPrimary">#000000</item>
+    </style>
+
+</resources>
